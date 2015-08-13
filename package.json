@@ -1,0 +1,16 @@
+{
+  "name": "campmap2015",
+  "version": "1.0.0",
+  "description": "Scrapes Twitter for #campmap",
+  "main": "campmapserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Kreil, OpenDataCity",
+  "license": "MIT",
+  "dependencies": {
+    "express": "3.1.0",
+    "ejs": "*",
+    "oauth": "*"
+  }
+}

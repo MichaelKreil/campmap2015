@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<!--
+		<meta name="twitter:image:height" content="500" />
+		<meta name="twitter:image:width" content="500" />
+		<meta name="twitter:url" content="https://dev.twitter.com/rest/reference/get/search/tweets" />
+		<link href="//abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="twitter:image" content="https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3.png" />
+
+		<meta name="og:url" content="https://dev.twitter.com/rest/reference/get/search/tweets" />
+		<meta name="og:image" content="https://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3.png" />
+		<meta name="og:description" content="Returns a collection of relevant Tweets matching a specified query." />
+		<meta name="og:title" content="GET search/tweets" />
+		<meta name="description" content="Returns a collection of relevant Tweets matching a specified query." />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:description" content="Returns a collection of relevant Tweets matching a specified query." />
+		<meta name="og:site_name" content="Twitter Developers" />
+		<link rel="canonical" href="https://dev.twitter.com/rest/reference/get/search/tweets" />
+		<meta name="twitter:title" content="GET search/tweets" />
+		<meta name="og:type" content="article" />
+	-->
+
+		<title>CCCampMap</title>
+
+		<link type="text/css" rel="stylesheet" href="style/main.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="leaflet/leaflet.css" media="all" />
+
+		<script type="text/javascript" src="script/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="script/main.js"></script>
+		<script>
+			window.twttr = (function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
+				if (d.getElementById(id)) return t;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = 'https://platform.twitter.com/widgets.js';
+				fjs.parentNode.insertBefore(js, fjs);
+				t._e = [];
+				t.ready = function(f) { t._e.push(f); };
+				return t;
+			}(document, 'script', 'twitter-wjs'));
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="map">
+			</div>
+		</div>
+	</body>
+</html>
+
